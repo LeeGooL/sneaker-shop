@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  list-style: none;
+}
+
+.menu__item {
+  padding: 0 10px;
+}
+
+.menu__link {
+  font-weight: bold;
+  font-size: 16px;
+  color: #e01533;
+  text-decoration: none;
+
+  border-bottom: 2px solid transparent;
+
+  transition: 0.3s;
+
+  &:hover {
+    border-bottom: 2px solid #e01533;
+  }
+}

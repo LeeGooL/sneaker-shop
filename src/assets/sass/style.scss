@@ -1,0 +1,59 @@
+@import "_vars";
+@import '_animation';
+
+/* Default styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", sans-serif;
+
+  background: linear-gradient(120deg, $white 75%, $red 25%);
+}
+
+
+/* Blocks */
+@import './blocks/nav';
+@import './blocks/logo';
+@import './blocks/menu';
+@import './blocks/search';
+@import './blocks/personal';
+@import './blocks/content';
+@import './blocks/footer';
