@@ -577,6 +577,10 @@ body {
     }
 }
 
+.social {
+    overflow: hidden;
+}
+
 .social__title {
     margin: 0;
     padding: 0;
@@ -607,7 +611,7 @@ body {
 
 @media (max-width: 500px) {
     .social__link {
-        padding-left: 10px;
+        padding-left: 2px;
     }
 }
 
