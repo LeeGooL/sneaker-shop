@@ -3,8 +3,16 @@
   align-items: center;
   width: 15%;
 
-  &__img {
-    max-width: 60px;
-    margin-left: 50%;
+  @media (max-width: 1200px) {
+    width: 20%;
+  }
+}
+
+.logo__img {
+  max-width: 60px;
+  margin-left: 50%;
+
+  @media (max-width: 500px) {
+    max-width: 40px;
   }
 }

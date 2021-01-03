@@ -14,14 +14,14 @@
 .menu__link {
   font-weight: bold;
   font-size: 16px;
-  color: #e01533;
+  color: $red;
   text-decoration: none;
 
   border-bottom: 2px solid transparent;
 
   transition: 0.3s;
+}
 
-  &:hover {
-    border-bottom: 2px solid #e01533;
-  }
+.menu__link:hover {
+  border-bottom: 2px solid $red;
 }

@@ -1,5 +1,5 @@
 @import "_vars";
-@import '_animation';
+@import "_animation";
 
 /* Default styles */
 html {
@@ -40,20 +40,34 @@ a {
 body {
   height: 100vh;
   margin: 0;
-  margin: 0;
   padding: 0;
 
   font-family: "PT Sans", sans-serif;
 
   background: linear-gradient(120deg, $white 75%, $red 25%);
+
+  @media (max-width: 1000px) {
+    background: $white;
+  }
+
+  @media (max-height: 650px) {
+    height: 120vh;
+  }
+
+  @media (max-height: 500px) and (max-width: 1000px) {
+    height: 180vh;
+  }
 }
 
 
 /* Blocks */
-@import './blocks/nav';
-@import './blocks/logo';
-@import './blocks/menu';
-@import './blocks/search';
-@import './blocks/personal';
-@import './blocks/content';
-@import './blocks/footer';
+@import "./blocks/nav";
+@import "./blocks/burger";
+@import "./blocks/nav-mobile";
+@import "./blocks/logo";
+@import "./blocks/menu";
+@import "./blocks/search";
+@import "./blocks/personal";
+@import "./blocks/content";
+@import "./blocks/footer";
+@import "./blocks/social";

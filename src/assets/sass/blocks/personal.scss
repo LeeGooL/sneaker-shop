@@ -1,5 +1,9 @@
 .personal-block {
   width: 15%;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .auth {
@@ -21,14 +25,14 @@
 
   transition: 0.3s;
 
-  &:hover {
-    color: $red;
-  }
-
   & i {
     padding: 0 5px;
 
-  font-size: 20px;
-  color: $red;
+    font-size: 20px;
+    color: $red;
+  }
+
+  &:hover {
+    color: $red;
   }
 }

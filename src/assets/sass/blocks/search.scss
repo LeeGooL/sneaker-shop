@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   width: 40%;
+
+  @media (max-width: 1200px) {
+    width: 60%;
+  }
 }
 
 .search {
@@ -11,8 +15,8 @@
   display: flex;
   width: 50%;
 
-  background-color: #ffffff;
-  border: 2px solid #e01533;
+  background-color: $white;
+  border: 2px solid $red;
   border-radius: 30px;
 }
 
@@ -29,6 +33,14 @@
   border: none;
   border-radius: 30px;
   outline: none;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 500px) {
+    height: 20px;
+  }
 }
 
 .search__btn {
@@ -38,6 +50,18 @@
   width: 10%;
 
   font-size: 17px;
-  color: #e01533;
+  color: $red;
   text-decoration: none;
+
+  @media (max-width: 1000px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 768px) {
+    width: 20%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
 }
