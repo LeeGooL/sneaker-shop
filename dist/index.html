@@ -69,7 +69,7 @@
       <div class="personal-block">
         <div class="auth">
           <div class="login">
-            <a class="auth__link" href="#!"
+            <a class="auth__link" id="signIn" href="#!"
               ><i class="fas fa-user-circle"></i>Войти</a
             >
           </div>
@@ -91,7 +91,7 @@
       <div class="nav-mobile__list">
         <ul class="nav-mobile__menu">
           <li class="nav-mobile__menu-item">
-            <a class="nav-mobile__menu-link" href="#">Войти</a>
+            <a class="nav-mobile__menu-link" id="signInMobile" href="#">Войти</a>
           </li>
     
           <li class="nav-mobile__menu-item">
@@ -175,6 +175,30 @@
           </li>
         </ul>
       </div>
+    </div>
+
+    <div class="sign-block">
+        <div class="sign">
+          <a href="#" class="sign__close"><i class="fas fa-times"></i></a>
+          <h4 class="sign__title">Вход</h4>
+    
+          <div class="sign__input">
+            <input type="text" placeholder="введите логин" />
+          </div>
+    
+          <div class="sign__input">
+            <input type="password" placeholder="введите пароль" />
+          </div>
+    
+          <div class="sign__input">
+            <input type="submit" value="Войти" />
+          </div>
+    
+          <p class="sign__unreg">Ещё не зарегистрированы?</p>
+          <div class="sing__btn sign__unreg-btn">
+            <input type="submit" value="Зарегистрироваться" />
+          </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

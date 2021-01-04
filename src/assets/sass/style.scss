@@ -37,6 +37,17 @@ a {
   text-decoration: none;
 }
 
+button, input {
+  border: none;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border: none;
+    outline: none;
+  }
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -71,3 +82,4 @@ body {
 @import "./blocks/content";
 @import "./blocks/footer";
 @import "./blocks/social";
+@import "./blocks/sign";

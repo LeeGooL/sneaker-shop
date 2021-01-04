@@ -60,6 +60,16 @@ a {
     text-decoration: none;
 }
 
+button, input {
+    border: none;
+    outline: none;
+}
+
+button:focus, button:hover, input:focus, input:hover {
+    border: none;
+    outline: none;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -634,4 +644,123 @@ body {
         font-size: 15px;
         color: #000000;
     }
+}
+
+.sign-block {
+    position: absolute;
+    z-index: 200;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 33, 33, 0.2);
+}
+
+.sign-block_active {
+    display: flex;
+}
+
+.sign {
+    width: 350px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.sign__close {
+    position: relative;
+    left: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    background: rgba(114, 114, 114, 0.15);
+    border-radius: 0 20px 0 20px;
+    transition: 0.3s;
+}
+
+.sign__close:hover {
+    color: #ffffff;
+    background: #e01533;
+}
+
+.sign__title {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sign__input,
+.sing__btn {
+    width: 70%;
+    margin: 25px auto;
+}
+
+.sign__input input {
+    width: 100%;
+    height: auto;
+    padding: 6px 0;
+    font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    border: 2px solid rgba(114, 114, 114, 0.5);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign__input input:hover, .sign__input input:focus {
+    color: #e01533;
+    border: 2px solid #e01533;
+}
+
+.sing__btn input {
+    width: 100%;
+    padding: 6px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background: #e01533;
+    border: 2px solid #e01533;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sing__btn input:hover {
+    color: #e01533;
+    background: #ffffff;
+}
+
+.sign__unreg {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sign__unreg input {
+    color: #e01533;
+    background: #ffffff;
+}
+
+.sign__unreg input:hover {
+    color: #ffffff;
+    background: #e01533;
 }

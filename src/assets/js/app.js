@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /* Animation */
   TweenMax.from(".content-info__title", 1, {
     delay: 0.4,
     y: 20,
@@ -83,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: Expo.easeInOut,
   });
 
+  /* Nav menu */
   const navMobileList = document.querySelector(".nav-mobile__list");
   const navMobileActive = "nav-mobile__list_active";
   const burger = document.querySelector(".burger");
@@ -96,5 +98,25 @@ document.addEventListener("DOMContentLoaded", () => {
       burger.classList.remove(burgerActive);
       navMobileList.classList.remove(navMobileActive);
     }
+  });
+
+  /* SignUp modal */
+  const signLink = document.getElementById("signIn");
+  const signBlock = document.querySelector(".sign-block");
+  const closeBtn = document.querySelector(".sign__close");
+  const signInMobile = document.getElementById("signInMobile");
+
+  signLink.addEventListener("click", () => {
+    signBlock.classList.toggle("sign-block_active");
+  });
+
+  signInMobile.addEventListener("click", () => {
+    signBlock.classList.toggle("sign-block_active");
+    burger.classList.remove("burger_active");
+    navMobileList.classList.remove("nav-mobile__list_active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    signBlock.classList.remove("sign-block_active");
   });
 });
