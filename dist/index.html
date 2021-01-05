@@ -54,7 +54,7 @@
             <a class="menu__link" href="#!">Девушки</a>
           </li>
         </ul>
-      </div>
+      </div><!-- /.nav-menu -->
     
       <div class="search-block">
         <div class="search">
@@ -64,7 +64,7 @@
             <i class="fas fa-search"></i>
           </a>
         </div>
-      </div>
+      </div><!-- /.search-block -->
     
       <div class="personal-block">
         <div class="auth">
@@ -79,9 +79,9 @@
               ><i class="fas fa-shopping-cart"></i>Корзина</a
             >
           </div>
-        </div>
-      </div>
-    </nav>
+        </div><!-- /.auth -->
+      </div><!-- /.personal-block -->
+    </nav><!-- /.nav -->
     
     <div class="nav-mobile">
       <a class="burger" href="#">
@@ -110,35 +110,37 @@
             <a class="nav-mobile__menu-link" href="#">Девушки</a>
           </li>
         </ul>
-      </div>
-    </div>
+      </div><!-- /.nav-mobile__list -->
+    </div><!-- /.nav-mobile -->
     
     
     <div class="content">
-      <div class="content-info">
-        <h1 class="content-info__title">The new <strong>990</strong></h1>
+      <div class="content__info">
+        <h1 class="content__info-title">The new <strong>990</strong></h1>
     
-        <p class="content-info__text">Их носят супермодели в Лондоне и отцы в Огайо</p>
+        <p class="content__info-text">
+          Их носят супермодели в Лондоне и отцы в Огайо
+        </p>
     
         <div class="content__links">
           <div class="content__btn content__btn--read">Читать далее</div>
           <div class="content__btn content__btn--shop">Купить сейчас</div>
         </div>
-      </div>
+      </div><!-- /.content-info -->
     
       <div class="content__img">
         <img src="assets/img/model.png" alt="" />
       </div>
-    </div>
+    </div><!-- /.content -->
     
 
     <div class="footer">
       <div class="footer__search">
-        <a href="#!">
+        <a id="mapLink" href="#!">
           <i class="fas fa-map-marker-alt"></i>
           Найти магазин
         </a>
-      </div>
+      </div><!-- /.footer__search -->
     
       <div class="social">
         <h4 class="social__title">оставайся на связи</h4>
@@ -173,33 +175,51 @@
               <i class="fab fa-instagram"></i>
             </a>
           </li>
-        </ul>
-      </div>
+        </ul><!-- /.social__icons -->
+      </div><!-- /.social -->
     </div>
 
     <div class="sign-block">
-        <div class="sign">
-          <a href="#" class="sign__close"><i class="fas fa-times"></i></a>
-          <h4 class="sign__title">Вход</h4>
+      <div class="sign">
+        <a class="sign__close" href="#"><i class="fas fa-times"></i></a>
+        <h4 class="sign__title">Вход</h4>
     
-          <div class="sign__input">
-            <input type="text" placeholder="введите логин" />
-          </div>
-    
-          <div class="sign__input">
-            <input type="password" placeholder="введите пароль" />
-          </div>
-    
-          <div class="sign__input">
-            <input type="submit" value="Войти" />
-          </div>
-    
-          <p class="sign__unreg">Ещё не зарегистрированы?</p>
-          <div class="sing__btn sign__unreg-btn">
-            <input type="submit" value="Зарегистрироваться" />
-          </div>
+        <div class="sign__input">
+          <input type="text" placeholder="введите логин" />
         </div>
-    </div>
+    
+        <div class="sign__input">
+          <input type="password" placeholder="введите пароль" />
+        </div>
+    
+        <div class="sign__input">
+          <input type="submit" value="Войти" />
+        </div>
+    
+        <p class="sign__unreg">Ещё не зарегистрированы?</p>
+    
+        <div class="sing__btn sign__btn-unreg">
+          <input type="submit" value="Зарегистрироваться" />
+        </div>
+      </div><!-- /.sign -->
+    </div><!-- /.sign-block -->
+
+    <div class="map-block" id="mapBlock">
+      <div class="map">
+        <a class="map__close close" id="mapClose" href="#"
+          ><i class="fas fa-times"></i
+        ></a>
+        <iframe
+          class="map__location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4988713.023646136!2d22.03442385417095!3d52.37232333196691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec94abf8f03a3%3A0x605053ed9e886d59!2sNew%20Balance!5e0!3m2!1sen!2sby!4v1571059257661!5m2!1sen!2sby"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+        ></iframe>
+      </div><!-- /.map -->
+    </div><!-- /.map-block -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="assets/js/app.min.js"></script>

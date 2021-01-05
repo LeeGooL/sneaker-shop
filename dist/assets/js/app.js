@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   /* Animation */
-  TweenMax.from(".content-info__title", 1, {
+  TweenMax.from(".content__info-title", 1, {
     delay: 0.4,
     y: 20,
     opacity: 0,
     ease: Expo.easeInOut,
   });
 
-  TweenMax.from(".content-info__text", 1, {
+  TweenMax.from(".content__info-text", 1, {
     delay: 0.7,
     y: 20,
     opacity: 0,
@@ -118,5 +118,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeBtn.addEventListener("click", () => {
     signBlock.classList.remove("sign-block_active");
+  });
+
+  /* Map */
+  const mapLink = document.getElementById("mapLink");
+  const mapBlock = document.getElementById("mapBlock");
+  const mapClose = document.getElementById("mapClose");
+
+  mapLink.addEventListener("click", () => {
+    mapBlock.classList.toggle("map-block_active");
+  });
+
+  mapClose.addEventListener("click", () => {
+    mapBlock.classList.remove("map-block_active");
   });
 });

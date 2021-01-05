@@ -12,7 +12,7 @@
     top: 110%;
   }
 
-  @media (max-height: 500px) and (max-width: 1000px) {
+  @media (max-height: $small-mobile-bp) and (max-width: $tablet-bp) {
     top: 180%;
   }
 }
@@ -30,7 +30,7 @@
 
     transition: 0.3s;
 
-    @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
       font-size: 12px;
     }
 
@@ -48,7 +48,7 @@
     animation: place 1s infinite;
     animation-timing-function: linear;
 
-    @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
       font-size: 14px;
     }
   }

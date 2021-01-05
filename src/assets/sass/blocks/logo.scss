@@ -3,7 +3,7 @@
   align-items: center;
   width: 15%;
 
-  @media (max-width: 1200px) {
+  @include breakpoint($desktop-bp) {
     width: 20%;
   }
 }
@@ -12,7 +12,7 @@
   max-width: 60px;
   margin-left: 50%;
 
-  @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
     max-width: 40px;
   }
 }

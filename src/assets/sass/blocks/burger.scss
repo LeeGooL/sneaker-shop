@@ -12,11 +12,11 @@
   border: 2px solid $red;
   border-radius: 50%;
 
-  @media (max-width: 1200px) {
+  @include breakpoint($desktop-bp) {
     display: block;
   }
 
-  @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
     top: 2%;
   }
 

@@ -11,7 +11,7 @@
   text-align: right;
   color: $white;
 
-  @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
     font-size: 15px;
     color: $black;
   }
@@ -30,24 +30,28 @@
 
   transition: 0.3s;
 
-  @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
     padding-left: 2px;
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 15px;
+    color: $black;
   }
 
   &:hover {
     color: $black;
 
-    @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
       color: $red;
     }
   }
 
   & i {
     padding-left: 20px;
-  }
 
-  @media (max-width: 1000px) {
-    font-size: 15px;
-    color: $black;
+  @include breakpoint($small-mobile-bp) {
+      padding-left: 15px;
+    }
   }
 }

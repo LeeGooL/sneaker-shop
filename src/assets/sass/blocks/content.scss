@@ -8,7 +8,7 @@
   width: 100%;
   height: 60%;
 
-  @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
     flex-direction: column;
   }
 
@@ -16,7 +16,7 @@
     top: 30%;
   }
 
-  @media (max-height: 500px) and (max-width: 1000px) {
+  @media (max-height: $small-mobile-bp) and (max-width: $tablet-bp) {
     top: 70%;
   }
 }
@@ -29,16 +29,16 @@
     font-size: 70px;
     color: $black;
 
-    @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
       font-size: 45px;
       text-align: center;
     }
 
-    @media (max-width: 768px) {
+  @include breakpoint($big-mobile-bp) {
       font-size: 40px;
     }
 
-    @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
       font-size: 30px;
     }
   }
@@ -49,14 +49,14 @@
   }
 }
 
-.content-info__text {
+.content__info-text {
   margin: 10px 0;
   padding: 0;
 
   font-size: 20px;
   color: $dark-grey;
 
-  @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
     font-size: 14px;
     text-align: center;
   }
@@ -69,7 +69,7 @@
   width: 70%;
   margin-top: 20px;
 
-  @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
     justify-content: center;
     width: 100%;
   }
@@ -88,13 +88,13 @@
 
   transition: 0.3s;
 
-  @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
     margin: 0 10px;
 
     font-size: 14px;
   }
 
-  @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
     margin: 0 10px;
 
     font-size: 12px;
@@ -124,16 +124,16 @@
 }
 
 .content__img {
-  @media (max-width: 1200px) {
+  @include breakpoint($desktop-bp) {
     max-width: 50%;
   }
 
-  @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
     max-width: 60%;
   }
 
   & img {
-    @media (max-width: 1200px) {
+    @include breakpoint($desktop-bp) {
       width: 100%;
     }
   }

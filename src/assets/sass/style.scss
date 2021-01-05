@@ -1,5 +1,6 @@
 @import "_vars";
 @import "_animation";
+@import "_mixins";
 
 /* Default styles */
 html {
@@ -37,7 +38,8 @@ a {
   text-decoration: none;
 }
 
-button, input {
+button,
+input {
   border: none;
   outline: none;
 
@@ -57,7 +59,7 @@ body {
 
   background: linear-gradient(120deg, $white 75%, $red 25%);
 
-  @media (max-width: 1000px) {
+@include breakpoint($tablet-bp) {
     background: $white;
   }
 
@@ -65,7 +67,7 @@ body {
     height: 120vh;
   }
 
-  @media (max-height: 500px) and (max-width: 1000px) {
+  @media (max-height: $small-mobile-bp) and (max-width: $tablet-bp) {
     height: 180vh;
   }
 }
@@ -83,3 +85,4 @@ body {
 @import "./blocks/footer";
 @import "./blocks/social";
 @import "./blocks/sign";
+@import "./blocks/map";

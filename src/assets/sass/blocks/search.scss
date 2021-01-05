@@ -4,7 +4,7 @@
   align-items: center;
   width: 40%;
 
-  @media (max-width: 1200px) {
+  @include breakpoint($desktop-bp) {
     width: 60%;
   }
 }
@@ -34,11 +34,11 @@
   border-radius: 30px;
   outline: none;
 
-  @media (max-width: 768px) {
+  @include breakpoint($big-mobile-bp) {
     width: 80%;
   }
 
-  @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
     height: 20px;
   }
 }
@@ -53,15 +53,15 @@
   color: $red;
   text-decoration: none;
 
-  @media (max-width: 1000px) {
+  @include breakpoint($tablet-bp) {
     font-size: 15px;
   }
 
-  @media (max-width: 768px) {
+  @include breakpoint($big-mobile-bp) {
     width: 20%;
   }
 
-  @media (max-width: 500px) {
+  @include breakpoint($small-mobile-bp) {
     font-size: 12px;
   }
 }

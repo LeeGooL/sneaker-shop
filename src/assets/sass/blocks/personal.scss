@@ -1,7 +1,7 @@
 .personal-block {
   width: 15%;
 
-  @media (max-width: 1200px) {
+  @include breakpoint($desktop-bp) {
     display: none;
   }
 }

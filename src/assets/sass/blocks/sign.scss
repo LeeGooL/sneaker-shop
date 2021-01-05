@@ -22,6 +22,10 @@
 
   background: $white;
   border-radius: 20px;
+
+  @include breakpoint($small-mobile-bp) {
+    width: 300px;
+  }
 }
 
 .sign__close {
@@ -42,6 +46,10 @@
   border-radius: 0 20px 0 20px;
 
   transition: 0.3s;
+
+  @include breakpoint($small-mobile-bp) {
+    left: 270px;
+  }
 
   &:hover {
     color: $white;
